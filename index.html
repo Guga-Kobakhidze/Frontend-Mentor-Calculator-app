@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h4 class="title_color">calc</h4>
+      <button class="change_style"><span class="change_color"></span></button>
+      <h6 class="title_color">theme</h6>
+      <h5 class="title_color">1 2 3</h5>
+    </div>
+    <div class="output">
+      <div class="current-operand"></div>
+    </div>
+    <div class="calcualtor">
+      <div class="nums">
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-delete class="oper_btn">DEL</button>
+      </div>
+      <div class="nums">
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation class="operand">+</button>
+      </div>
+      <div class="nums">
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation class="operand">-</button>
+      </div>
+      <div class="nums">
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-operation class="operand">/</button>
+        <button data-operation class="operand">x</button>
+      </div>
+      <div class="nums">
+        <button data-all-clear class="span-two oper_btn">RESET</button>
+        <button data-equals class="equals">=</button>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="assets/main.js"></script>
+  </body>
+</html>

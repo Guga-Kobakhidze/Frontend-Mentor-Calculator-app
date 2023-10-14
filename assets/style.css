@@ -1,0 +1,172 @@
+:root {
+  /* Font Size */
+  --main-fs: 32px;
+  --main-font-family: "League Spartan", sans-serif;
+  --main-Weights: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+  font-family: var(--main-font-family);
+  font-size: var(--main-fs);
+  font-weight: var(--main-Weights);
+  transition: 0.5s;
+}
+
+.calcualtor {
+  background-color: hsl(223, 31%, 20%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+.output {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  padding-right: 20px;
+  width: 300px;
+  height: 70px;
+  background-color: hsl(224, 35%, 12%);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.title .change_style {
+  position: relative;
+  background-color: hsl(223, 31%, 20%);
+  box-shadow: none;
+  width: 60px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.title .change_style:hover {
+  background-color: hsl(223, 31%, 20%) !important;
+}
+
+.change_color {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 50%;
+  left: 5px;
+}
+
+.title h4 {
+  font-size: 18px;
+  font-family: var(--main-font-family);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+
+.title h5,
+.title h6 {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+
+.title h6 {
+  letter-spacing: 0;
+  top: 5px;
+  right: 75px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 10px;
+  transition: all 0.5s;
+}
+
+.nums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  color: hsl(224, 28%, 35%);
+  font-family: var(--main-font-family);
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: var(--main-Weights);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0px 3px 0px 0px hsla(29, 16%, 65%, 0.895);
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%) !important;
+}
+
+.oper_btn {
+  font-size: 18px;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+  width: 61px;
+  transition: 0.5s;
+}
+
+.oper_btn:hover {
+  background-color: hsl(223, 16%, 55%) !important;
+}
+
+.span-two {
+  width: 135px;
+}
+
+.equals {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  width: 135px;
+  transition: 0.5s;
+}
+
+.equals:hover {
+  background-color: hsl(6, 68%, 63%) !important;
+}
