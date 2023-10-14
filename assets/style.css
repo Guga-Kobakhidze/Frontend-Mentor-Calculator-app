@@ -86,7 +86,7 @@ body {
   left: 5px;
 }
 
-.title h4 {
+.title .calc_title {
   font-size: 18px;
   font-family: var(--main-font-family);
   color: hsl(0, 0%, 100%);
