@@ -172,3 +172,7 @@ button:hover {
 .equals:hover {
   background-color: hsl(6, 68%, 63%) !important;
 }
+
+.visually-hidden {
+  display: none;
+}
